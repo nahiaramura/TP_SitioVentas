@@ -1,0 +1,53 @@
+/* VIDEO FULL WIDTH */
+.home-video-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* CONTENIDO CENTRADO BAJO EL VIDEO */
+  .home-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  /* IMAGEN AJUSTADA AL CONTENEDOR */
+  .home-banner {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    margin-top: -5px;
+  }
+  
+  /* BOTÓN "COMPRAR" */
+  .home-cta {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-comprar {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-comprar:hover {
+    background-color: #007aff;
+  }
+  
+  
