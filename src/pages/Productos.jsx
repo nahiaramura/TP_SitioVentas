@@ -1,22 +1,47 @@
-import { useParams } from 'react-router-dom';
+import './Productos.css'; // o el nombre correcto del archivo
+import { useEffect, useState } from 'react';
 import { celulares } from '../data/data';
+import { useParams } from 'react-router-dom';
 import CardCelular from '../components/CardCelular';
-import './Productos.css';
 
 const Productos = () => {
   const { idMarca } = useParams();
-  const marcaId = parseInt(idMarca);
+  const [filtrados, setFiltrados] = useState([]);
+  const [busqueda, setBusqueda] = useState('');
 
-  const celularesFiltrados = idMarca
-    ? celulares.filter(c => c.marcaId === marcaId)
-    : celulares;
+  useEffect(() => {
+    const celularesFiltrados = idMarca ? celulares.filter(c => c.marcaId === parseInt(idMarca)) : celulares;
+    setFiltrados(celularesFiltrados);}, [idMarca]);
+
+  const handleBusqueda = (e) => {
+    const valor = e.target.value.toLowerCase();
+    setBusqueda(valor);
+    const celularesFiltrados = idMarca ? celulares.filter(c => c.marcaId === parseInt(idMarca)) : celulares;
+    const resultado = celularesFiltrados.filter(c => c.nombre.toLowerCase().includes(valor));
+    setFiltrados(resultado);
+  };
 
   return (
     <div className="productos">
-      <div className="grid">
-        {celularesFiltrados.map(cel => (
-          <CardCelular key={cel.id} celular={cel} />
-        ))}
+      <h2>Catálogo de Celulares</h2>
+
+      <input type="text" placeholder="Buscar por nombre..." value={busqueda} onChange={handleBusqueda}
+        style={{
+          padding: '10px',
+          marginBottom: '20px',
+          width: '100%',
+          maxWidth: '400px',
+          fontSize: '1rem',
+          borderRadius: '8px',
+          border: '1px solid #ccc',
+          display: 'block',
+          marginLeft: 'auto',
+          marginRight: 'auto'
+        }}
+      />
+
+      <div className="productos-grid">
+        {filtrados.map(celular => (<CardCelular key={celular.id} celular={celular} />))}
       </div>
     </div>
   );

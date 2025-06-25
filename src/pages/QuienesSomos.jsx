@@ -14,33 +14,14 @@ const QuienesSomos = () => {
           Tu navegador no soporta videos.
         </video>
         <div className="qs-overlay">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            Innovación sin límites
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 1 }}
-          >
-            En IPREMIUM, la tecnología es parte de tu estilo de vida.
-          </motion.p>
+          <motion.h1 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}   transition={{ duration: 1 }} > Innovación sin límites </motion.h1>
+          
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 1 }} > En IPREMIUM, la tecnología es parte de tu estilo de vida. </motion.p>
         </div>
       </div>
 
-      <motion.section className="qs-section"
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <video autoPlay muted loop playsInline className="qs-video-mision">
-        <source src={videoMision} type="video/mp4" />
-      Tu navegador no soporta videos.
-    </video>
+      <motion.section className="qs-section" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }}  transition={{ duration: 0.8 }}  viewport={{ once: true }} >
+      <video autoPlay muted loop playsInline className="qs-video-mision"> <source src={videoMision} type="video/mp4" /> Tu navegador no soporta videos. </video>
     
         <div>
           <h2>Nuestra misión</h2>
@@ -48,16 +29,8 @@ const QuienesSomos = () => {
         </div>
       </motion.section>
 
-      <motion.section className="qs-section reverse"
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-       <video autoPlay muted loop playsInline className="qs-video-mision">
-            <source src={videoAsesoramiento} type="video/mp4" />
-        Tu navegador no soporta videos.
-        </video>
+      <motion.section className="qs-section reverse" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} >
+       <video autoPlay muted loop playsInline className="qs-video-mision"> <source src={videoAsesoramiento} type="video/mp4" /> Tu navegador no soporta videos. </video>
         <div>
           <h2>Asesoramiento experto</h2>
           <p>Te ayudamos a elegir el celular perfecto según tu estilo de vida. No vendemos productos, ofrecemos soluciones.</p>
