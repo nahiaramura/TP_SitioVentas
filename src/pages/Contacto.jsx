@@ -9,8 +9,10 @@ const Contacto = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
+      
       <div className="form-container">
         <h2>Contacto</h2>
+        
         <form className="form">
           <input type="text" placeholder="Nombre" required />
           <input type="email" placeholder="Correo" required />

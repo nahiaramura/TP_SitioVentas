@@ -65,13 +65,6 @@ const QuienesSomos = () => {
         </div>
       </motion.section>
 
-      <motion.section className="qs-benefits"
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-      </motion.section>
     </motion.div>
   );
 };

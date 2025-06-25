@@ -50,3 +50,19 @@
     background-color: #007aff; /* Azul estilo Samsung */
   }
   
+  .card {
+    width: 100%;
+    max-width: 240px;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  

@@ -76,7 +76,7 @@ export const marcas = [
       descripcion: 'Pantalla 120Hz, Dimensity 930, Android 13',
       precio: 399,
       marcaId: 4,
-      fotos: ['https://rongahogar.com.ar/storage/2024/07/00000777_1.jpg']
+      fotos: ['https://epicgeek.com.br/wp-content/uploads/2022/09/Motorola-Moto-E22.png']
     },
     {
       id: 10,
