@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem; 
-  background-color: #fff;
+  background-color: rgb(212, 212, 212);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -37,14 +37,43 @@
 .nav-links a {
   text-decoration: none;
   font-weight: 500;
-  color: #111;
+  color: #644edd;
   padding: 0.5rem 0;
   transition: color 0.2s ease-in-out;
 }
 
 .nav-links a:hover {
-  color: #007aff;
+  color: #0400ff;
 }
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  color: #644edd;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #644edd;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #3b24c4;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 
 
 .dropdown span {

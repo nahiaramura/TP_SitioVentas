@@ -11,9 +11,9 @@ const Navbar = () => {
       </Link>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/quienes-somos">Quienes Somos</Link></li>
+        <li><Link to="/quienes-somos">Quienes somos</Link></li>
         <li className="dropdown">
-          <span>Productos</span>
+        <Link to="/productos">Productos</Link>
           <ul className="dropdown-menu">
             <li><Link to="/productos">Ver todos</Link></li>
             {marcas.map(m => (

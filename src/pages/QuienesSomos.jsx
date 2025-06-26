@@ -1,4 +1,3 @@
-// Nuevo QuienesSomos.jsx con estilo premium y animaciones
 import './QuienesSomos.css';
 import { motion } from 'framer-motion';
 import videoMision from '../assets/Mision.mp4';

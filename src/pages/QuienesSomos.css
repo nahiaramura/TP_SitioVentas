@@ -1,4 +1,3 @@
-/* QuienesSomos.css rediseñado con estética armónica y profesional */
 .qs-wrapper {
   font-family: 'Helvetica Neue', sans-serif;
   color: #111;
@@ -7,7 +6,7 @@
 
 .qs-hero {
   position: relative;
-  height: 40vh; /* ajustado */
+  height: 40vh; 
   overflow: hidden;
   display: flex;
   align-items: center;

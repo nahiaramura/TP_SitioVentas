@@ -71,7 +71,6 @@
     background-color: #5900ff;
   }
   
-  /* Responsive layout */
   @media (min-width: 768px) {
     .detalle-content {
       flex-direction: row;

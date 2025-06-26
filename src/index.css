@@ -1,11 +1,9 @@
-/* RESET BÁSICO */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* TIPOGRAFÍA GLOBAL */
 body {
   font-family: 'SamsungOne', 'Helvetica Neue', sans-serif;
   background-color: #f9f9f9;
@@ -13,13 +11,11 @@ body {
   line-height: 1.6;
 }
 
-/* LINKS */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* BOTONES GENÉRICOS */
 .btn {
   background-color: #000;
   color: #fff;
@@ -36,13 +32,11 @@ a {
   background-color: #333;
 }
 
-/* TITULOS */
 h1, h2, h3, h4 {
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-/* FORMULARIOS */
 input, textarea {
   width: 100%;
   padding: 0.8rem;
@@ -52,7 +46,6 @@ input, textarea {
   font-size: 1rem;
 }
 
-/* GRILLA RESPONSIVE */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -60,13 +53,12 @@ input, textarea {
   margin: 2rem 0;
 }
 
-/* FOOTER */
 .footer {
-  background-color: #111;
-  color: #fff;
-  padding: 1.5rem;
+  background-color: rgb(212, 212, 212);
+  color: #7133c4;
+  padding: 1rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .main-normal {
   padding: 2rem;
