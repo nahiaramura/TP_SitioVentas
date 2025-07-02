@@ -1,4 +1,4 @@
-import './Productos.css'; // o el nombre correcto del archivo
+import './Productos.css'; 
 import { useEffect, useState } from 'react';
 import { celulares } from '../data/data';
 import { useParams } from 'react-router-dom';
